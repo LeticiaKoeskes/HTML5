@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <meta name="description" content="Inserindo informações na página">
+    <meta name="author" content="Leticia Koeskes">
+    <meta name="keywords" content="Imagem, link, texto">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="estilo.css">
+    <title>HTML2PRAIA</title>
+</head>
+
+<body>
+
+
+    <section class="showcase">
+
+        <header>
+            <h2 class="logo">Viajar</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="production ID_4873090.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Nunca pare!</h2>
+            <h3>Explorando o mundo</h3>
+            <p>Aqui nós vamos explorar todos os lugares do mundo! Espero que curtam a aventura e se divirtam pesquisando
+                por lugares, admirando a beleza das fotos e planejando sua próxima viagem. Conto com vocês!</p>
+            <a href="#">Explorar</a>
+        </div>
+
+        <ul class="social">
+            <li> <a href="#"> <img src="facebook.png" alt="" /></a></li>
+            <li> <a href="#"> <img src="twitter.png" alt="" /></a></li>
+            <li> <a href="#"> <img src="instagram.png" alt="" /></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Destino</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+
+</body>
+
+</html>
